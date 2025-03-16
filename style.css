@@ -5,6 +5,7 @@ body {
 }
 h1 {
     font-family: lobster;
+    color: #ffffff;
     }
 
  .lobster-regular {
@@ -12,4 +13,49 @@ h1 {
         font-weight: 400;
         font-style: normal;
       }
-      
+    
+     
+    body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 300px;
+    background-color: #6a11cb;
+}
+img {
+    width: 400px;
+    height: 300px;
+   }
+   body {
+    border-width: 3px;
+    border-style: solid;
+    border-color: grey;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    display: block;
+   
+   }
+
+p {
+    color:#ffffff;
+}
+
+
+.pravidla {
+    color: white;
+    background-color: #1fcca4;
+}
+.pravidla:hover {
+    background-color:  #1cbb96;
+}
+
+
+.zacit {
+    color: white;
+    background-color: #0197f6;
+}
+ .zacit:hover { 
+ background-color: #0090e9;
+ }
