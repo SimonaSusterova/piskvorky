@@ -2,7 +2,16 @@ body {
     text-align: center;
     display: block;
     margin: 8px;
+    background-color: #6a11cb;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 300px;
+
 }
+
 h1 {
     font-family: lobster;
     color: #ffffff;
@@ -14,29 +23,20 @@ h1 {
         font-style: normal;
       }
     
-     
-    body {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 300px;
-    background-color: #6a11cb;
-}
-img {
-    width: 400px;
-    height: 300px;
-   }
-   body {
-    border-width: 3px;
-    border-style: solid;
-    border-color: grey;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    display: block;
+
+     .nadpis {
+        background-color: #283e50;
+     }
+    .text {
+        background-color: #283e50;
+        font-family: Arial;
+    }
    
+img {
+    width: 350px;
+    height: 250px;
    }
+  
 
 p {
     color:#ffffff;
@@ -46,6 +46,10 @@ p {
 .pravidla {
     color: white;
     background-color: #1fcca4;
+    font-family: arial;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
 }
 .pravidla:hover {
     background-color:  #1cbb96;
@@ -55,7 +59,12 @@ p {
 .zacit {
     color: white;
     background-color: #0197f6;
+    font-family: arial;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
 }
  .zacit:hover { 
  background-color: #0090e9;
  }
+
