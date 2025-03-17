@@ -1,21 +1,28 @@
 body {
     text-align: center;
     display: block;
-    margin: 8px;
-    background-color: #6a11cb;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 300px;
+    padding: 560px;
+    justify-content: column; 
+    position: relative;
 
+  }
+   
+
+
+body {
+    background: linear-gradient(to top right, #ffc8da, #615dad);
+    
 }
+ 
 
+.box {
+    background-color: #283e50;
+}
 h1 {
     font-family: lobster;
     color: #ffffff;
-    }
+    margin:  0px;
+}
 
  .lobster-regular {
         font-family: "Lobster", sans-serif;
@@ -33,13 +40,18 @@ h1 {
     }
    
 img {
-    width: 350px;
+    width: 385px;
     height: 250px;
+    margin: 0px;
+    
    }
   
 
 p {
     color:#ffffff;
+    margin: 0px;
+    line-height: 24px;
+    font-size: 20px;
 }
 
 
