@@ -1,82 +1,85 @@
 body {
-    text-align: center;
-    display: block;
-    padding: 560px;
-    justify-content: column; 
-    position: relative;
-
-  }
-   
-
-
-body {
     background: linear-gradient(to top right, #ffc8da, #615dad);
-    
+    color: white;
+    text-align: center;
+    padding: 50px;
+    place-items: center;
 }
- 
 
-.box {
-    background-color: #283e50;
-}
 h1 {
     font-family: lobster;
     color: #ffffff;
-    margin:  0px;
+    background-color: #283e50;
+    width: 25%;
+    padding: 10px;
+    margin: 0px;
+    font-size: 30px;
+
 }
 
- .lobster-regular {
-        font-family: "Lobster", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-    
+div {
+    place-items: center;
+    width: 65%;
+}
+footer {
+    justify-items: auto;
+}
 
-     .nadpis {
-        background-color: #283e50;
-     }
-    .text {
-        background-color: #283e50;
-        font-family: Arial;
-    }
-   
 img {
-    width: 385px;
-    height: 250px;
-    margin: 0px;
-    
-   }
-  
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+ 
+}
 
-p {
-    color:#ffffff;
-    margin: 0px;
-    line-height: 24px;
+section {
+    background-color: #283e50;
+    place-items: center;
+    width: 30%;
+    height: 5%;
+    border-radius: 10px 10px 0px 0px;
+   
+}
+.pravidla {
+    color: #ffffff;
+    font-size: 20px;
+    background-color: #1fcca4;
+    font-family: arial;
+    text-decoration: none;
+
+}
+.zacit {
+    color: #ffffff;
+    font-size: 20px;
+    background-color: #0197f6;
+    font-family: arial;
+    text-decoration: none;
+    width: 500px; 
+    
+}
+
+a {
+    padding: 5% 50% 5% 50%;
+}
+
+p{
+    background-color: #283e50;
+    line-height: 1.5;
+    font-family: arial;
+    width: 70%;
+    padding: 10px;
+    margin: 0px 10px 0px 10px;
     font-size: 20px;
 }
 
 
-.pravidla {
-    color: white;
-    background-color: #1fcca4;
-    font-family: arial;
-    padding: 10px;
-    font-size: 24px;
-    text-align: center;
-}
+
+
+.zacit:hover { 
+    background-color: #0090e9;
+    }
+
 .pravidla:hover {
-    background-color:  #1cbb96;
-}
+        background-color:  #1cbb96;
+    }
 
-
-.zacit {
-    color: white;
-    background-color: #0197f6;
-    font-family: arial;
-    padding: 10px;
-    font-size: 24px;
-    text-align: center;
-}
- .zacit:hover { 
- background-color: #0090e9;
- }
 
