@@ -13,14 +13,12 @@ h1 {
     background-color: #283e50;
     font-size: 30px;
     text-align: center;
-
 }
 
 
 img {
     width: 100%;
     border-radius: 10px 10px 0px 0px;
- 
 }
 
 .piskvorky {
@@ -40,6 +38,7 @@ img {
     padding: 16px 32px;
     cursor: pointer;
 }
+
 .zacit {
     color: #ffffff;
     font-size: 20px;
@@ -71,5 +70,5 @@ p{
     }
 
 .pravidla:hover {
-        background-color:  #1cbb96;
+    background-color:  #1cbb96;
     }
