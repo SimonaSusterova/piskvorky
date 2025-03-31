@@ -1,10 +1,11 @@
 body {
     background: linear-gradient(to top right, #ffc8da, #615dad);
     color: white;
-    text-align: center;
     padding: 50px;
     place-items: center;
     align-items: center;
+   
+    
 }
 
 h1 {
@@ -13,6 +14,7 @@ h1 {
     background-color: #283e50;
     font-size: 30px;
     text-align: center;
+   
 }
 
 
@@ -23,8 +25,7 @@ img {
 
 .piskvorky {
     background-color: #283e50;
-    max-width: 400px;
-   text-align: center;
+    
     border-radius: 10px 10px 0px 0px;
     max-width: 80vmin; 
 }
@@ -52,6 +53,7 @@ img {
     width: 100%;
     padding: 16px 32px;
     cursor: pointer;
+   
 }
 
 
@@ -63,7 +65,9 @@ p{
     margin: 0px 10px 0px 10px;
     font-size: 20px;
     padding:  0px 10px 10px 10px;
+   
 }
+
 
 
 
@@ -76,3 +80,12 @@ p{
     background-color:  #1cbb96;
     }
 
+.domek {
+    width: 10%;
+  
+}
+
+.hraje {
+    margin-left: 60px;
+    
+}
