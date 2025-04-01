@@ -9,128 +9,143 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
+
+
 <body>
+
 <section class="hlavni">
-    <h1>Piškvorky</h1>
+
+    <h1 class="nadpis">Piškvorky</h1>
 
  
-<p>HRAJE: <span class="ctverec"></span></p>
+    <div class="hra__info">
+        <div class="hra__hrac">
+            <input type="checkbox" class="hra__checkbox" id="hra__checkbox">
 
-    <a class="domek">
+            <label for="hra__checkbox" class="hra__label">
+<p>HRAJE:</p>  <img src="img/circle.svg" alt="Kruh"> </label>
+       </div>
+    </div>
+
+<div class="tlacitka">
+
+    <a href="index.html" class="ikona  domek"> 
         <img src = "img/home.svg" alt = "Domek">
     </a>
 
-    <a class="restart">
+    <a href="hra.html" class="ikona  restart"> 
         <img src = "img/restart.svg" alt = "Restart">
     </a>
 
+</div>
     
     <div class="board">  <!-- kontejner pro hrací pole --> 
        
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-        <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
-    <button class="cell"></button>
+        <button class="cell" id="kostka-1"></button>
+        <button class="cell" id="kostka-2"></button>
+        <button class="cell" id="kostka-3"></button>
+        <button class="cell" id="kostka-4"></button>
+        <button class="cell" id="kostka-5"></button>
+        <button class="cell" id="kostka-6"></button>
+        <button class="cell" id="kostka-7"></button>
+        <button class="cell" id="kostka-8"></button>
+        <button class="cell" id="kostka-9"></button>
+        <button class="cell" id="kostka-10"></button>
+        <button class="cell" id="kostka-11"></button>
+        <button class="cell" id="kostka-12"></button>
+        <button class="cell" id="kostka-13"></button>
+        <button class="cell" id="kostka-14"></button>
+        <button class="cell" id="kostka-15"></button>
+        <button class="cell" id="kostka-16"></button>
+        <button class="cell" id="kostka-17"></button>
+        <button class="cell" id="kostka-18"></button>
+        <button class="cell" id="kostka-19"></button>
+        <button class="cell" id="kostka-20"></button>
+        <button class="cell" id="kostka-21"></button>
+        <button class="cell" id="kostka-22"></button>
+        <button class="cell" id="kostka 23"></button>
+        <button class="cell" id="kostka-24"></button>
+        <button class="cell" id="kostka-25"></button>
+        <button class="cell" id="kostka-26"></button>
+        <button class="cell" id="kostka-27"></button>
+        <button class="cell" id="kostka-28"></button>
+        <button class="cell" id="kostka-29"></button>
+        <button class="cell" id="kostka-30"></button>
+        <button class="cell" id="kostka-31" ></button>
+        <button class="cell" id="kostka-32"></button>
+        <button class="cell" id="kostka-33"></button>
+        <button class="cell" id="kostka-34"></button>
+        <button class="cell" id="kostka-35"></button>
+    <button class="cell" id="kostka-36"></button>
+    <button class="cell" id="kostka-37"></button>
+    <button class="cell" id="kostka-38"></button>
+    <button class="cell" id="kostka-39"></button>
+    <button class="cell" id="kostka-40"></button>
+    <button class="cell" id="kostka-41"></button>
+    <button class="cell" id="kostka-42"></button>
+    <button class="cell" id="kostka-43"></button>
+    <button class="cell" id="kostka-44"></button>
+    <button class="cell" id="kostka-45"></button>
+    <button class="cell" id="kostka-46"></button>
+    <button class="cell" id="kostka-47"></button>
+    <button class="cell" id="kostka-48"></button>
+    <button class="cell" id="kostka-49"></button>
+    <button class="cell" id="kostka-50"></button>
+    <button class="cell" id="kostka-51"></button>
+    <button class="cell" id="kostka-52"></button>
+    <button class="cell" id="kostka-53"></button>
+    <button class="cell" id="kostka-54"></button>
+    <button class="cell" id="kostka-55"></button>
+    <button class="cell" id="kostka-56"></button>
+    <button class="cell" id="kostka-57"></button>
+    <button class="cell" id="kostka-58"></button>
+    <button class="cell" id="kostka-59"></button>
+    <button class="cell" id="kostka-60"></button>
+    <button class="cell" id="kostka-61"></button>
+    <button class="cell" id="kostka-62"></button>
+    <button class="cell" id="kostka-63"></button>
+    <button class="cell" id="kostka-64"></button>
+    <button class="cell" id="kostka-65"></button>
+    <button class="cell" id="kostka-66"></button>
+    <button class="cell" id="kostka-67"></button>
+    <button class="cell" id="kostka-68"></button>
+    <button class="cell" id="kostka-69"></button>
+    <button class="cell" id="kostka-70"></button>
+    <button class="cell" id="kostka-71"></button>
+    <button class="cell" id="kostka-72"></button>
+    <button class="cell" id="kostka-73"></button>
+    <button class="cell" id="kostka-74"></button>
+    <button class="cell" id="kostka-75"></button>
+    <button class="cell" id="kostka-76"></button>
+    <button class="cell" id="kostka-77"></button>
+    <button class="cell" id="kostka-78"></button>
+    <button class="cell" id="kostka-79"></button>
+    <button class="cell" id="kostka-80"></button>
+    <button class="cell" id="kostka-81"></button>
+    <button class="cell" id="kostka-82"></button>
+    <button class="cell" id="kostka-83"></button>
+    <button class="cell" id="kostka-84"></button>
+    <button class="cell" id="kostka-85"></button>
+    <button class="cell" id="kostka-86"></button>
+    <button class="cell" id="kostka-87"></button>
+    <button class="cell" id="kostka-88"></button>
+    <button class="cell" id="kostka-89"></button>
+    <button class="cell" id="kostka-90"></button>
+    <button class="cell" id="kostka-91"></button>
+    <button class="cell" id="kostka-92"></button>
+    <button class="cell" id="kostka-93"></button>
+    <button class="cell" id="kostka-94"></button>
+    <button class="cell" id="kostka-95"></button>
+    <button class="cell" id="kostka-96"></button>
+    <button class="cell" id="kostka-97"></button>
+    <button class="cell" id="kostka-98"></button>
+    <button class="cell" id="kostka-99"></button>
+    <button class="cell" id="kostka-100"></button>
     
 
     </div>
 
 </section>
+
 </body>
 </html>

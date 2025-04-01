@@ -4,10 +4,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   
     display: flex;
-   
+    width: 100%;
 }
+
+
 
 
 h1 {
@@ -15,89 +16,106 @@ h1 {
     color: #ffffff;
     font-size: 60px;
     text-align: center;
-    place-items: center;
     align-items: center;
-   
+    margin: 8%; 
 }
 
 .hlavni {
-    max-width: 80vmin;
-    width: 100%;
-    padding: 30px 32px;
-  
+    flex-direction: column;
+    max-width: 80vmin; 
 }
 
-.domek {
+/*sekce pro tlačítka*/
+
+.tlacitka {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+    margin: 0% 10% 10% 0%;
+}
+
+
+
+.ikona {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8%;
+}
+
+
+.domek{
     background-color: #1fcca4;
-    cursor: pointer;
-    float: right;
-    border-radius: 5px 5px 5px 5px;
 }
-
 .domek:hover {
     background-color: #1cbb96;
 }
 
-.restart {
-    background-color: #0197f6;
-    cursor: pointer;
-    float: right;
-    border-radius: 5px 5px 5px 5px;
-    
-}
 
+
+.restart{
+    background-color: #0197f6;
+}
 .restart:hover {
     background-color: #0090e9;
 }
 
 
 
-.ctverec {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    border-color: #ffffff;
-    border-style: solid;
-    margin: 0 3px; /* mezery kolem čtverce */
-    border-radius: 50%;
-}
+
+/*hrací pole*/
 
 .board {
     display: grid;
     grid-template-columns: repeat(10, 50px); /* 10 sloupců, každý 50px */
     grid-template-rows: repeat(10, 50px); /* 10 řádků, každý 50px */
     justify-content: center;
-    margin-top: 20px;
-    background: linear-gradient(to top right, #ffc8da, #615dad);
+    margin-top: -20px;
+    cursor: pointer;
+    
 }
 
 .cell {
-    width: 50px;
-    height: 50px;
-    border: 2px solid #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2em;
+    max-width: 80vmin;
     cursor: pointer;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0.5; 
+    aspect-ratio: 1;
+    border: 2px solid #000;
+
 }
+
 
 .cell:hover {
-    background-color: #f0f0f0;
+ background-color: #f0f0f0;
 }
 
-.domek img,
-.restart img {
-    width: 30px;
-    height: 30px;
 
+
+.hra__checkbox {
+    display: none;
 }
 
-p {
-    font-size: 20px;
+.hra__label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    margin-bottom: -55px;   
+    margin-left: 10%; 
+   
 }
 
-.cell {
-    margin: 0px;
+.hra__label p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
 }
+
+.hra__info {
+    margin: 0% 0% 0% 0%;
+}
+
+
