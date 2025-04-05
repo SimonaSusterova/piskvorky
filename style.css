@@ -25,7 +25,6 @@ img {
 
 .piskvorky {
     background-color: #283e50;
-    
     border-radius: 10px 10px 0px 0px;
     max-width: 80vmin; 
 }
@@ -57,7 +56,7 @@ img {
 }
 
 
-p{
+p {
     background-color: #283e50;
     line-height: 1.5;
     font-family: arial;
