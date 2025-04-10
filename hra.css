@@ -116,4 +116,17 @@ h1 {
 }
 
 
+.board__field {
+    width: 60px;
+    height: 60px;
+}
 
+.board__field--circle::before {
+    content: url(img/circlee.svg);
+}
+
+.board__field--cross::before {
+        content: url(img/crosss.svg);
+    }
+
+    
