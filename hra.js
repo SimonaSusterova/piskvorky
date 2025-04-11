@@ -39,4 +39,13 @@ policka.forEach((policko) => {
 
 aktualizujHrace();
 
+//BONUS - dotaz na restart
+const restartDotaz = document.querySelector('.restart');
 
+restartDotaz.addEventListener('click', (event) => {
+  const chceRestartovat = confirm('Opravdu chceš začít znovu?');
+
+  if (!chceRestartovat) {
+    event.preventDefault(); 
+  }
+});
