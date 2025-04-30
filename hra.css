@@ -125,17 +125,17 @@ h1 {
 
 .board__field--circle::before {
     content: url(img/circlee.svg);
-    animation: zoomIn 0.3s ease-out forwards; // přidání animace 
+    animation: zoomIn 0.3s ease-out forwards; /*přidání animace*/
     transform-origin: center;
 }
 
-.board__field--cross::before {
+.board__field--cross::before  {
     content: url(img/crosss.svg);
-    animation: zoomIn 0.3s ease-out forwards; // přidání animace
+    animation: zoomIn 0.3s ease-out forwards; /*přidání animace*/
     transform-origin: center;
     }
 
-    // animace
+    /*animace*/
     
     @keyframes zoomIn {
         0% {
