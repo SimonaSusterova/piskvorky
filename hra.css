@@ -27,7 +27,7 @@ h1 {
 /*sekce pro tlačítka*/
 
 .tlacitka {
-    display: flex;
+    display: flex; 
     gap: 0.5rem;
     justify-content: flex-end;
     margin: 0% 10% 10% 0%;

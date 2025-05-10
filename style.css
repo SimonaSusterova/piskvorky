@@ -37,19 +37,21 @@ img {
     font-family: arial;
     text-decoration: none;
     display: inline-block;
-    width: 100%;
+    width: 89%;
     padding: 16px 32px;
     cursor: pointer;
+    text-align: center;
 }
 
 .zacit {
+     text-align: center;
     color: #ffffff;
     font-size: 20px;
     background-color: #0197f6;
     font-family: arial;
     text-decoration: none;
     display: inline-block;
-    width: 100%;
+    width: 89%;
     padding: 16px 32px;
     cursor: pointer;
    
