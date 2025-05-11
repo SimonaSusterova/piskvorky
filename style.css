@@ -1,89 +1,95 @@
-
 body {
-    background: linear-gradient(to top right, #ffc8da, #615dad);
-    color: white;
-    padding: 50px;
-    place-items: center;
-    align-items: center;
-   
-    
+  background: linear-gradient(to top right, #ffc8da, #615dad);
+  color: white;
+  padding: 50px;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 h1 {
-    font-family: lobster;
-    color: #ffffff;
-    background-color: #283e50;
-    font-size: 30px;
-    text-align: center;
-   
+  font-family: 'Lobster', cursive;
+  color: #ffffff;
+  background-color: #283e50;
+  font-size: 30px;
+  text-align: center;
+  padding: 16px;
+  margin: 0;
 }
 
 img {
-    width: 100%;
-    border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  display: block;
 }
 
 .piskvorky {
-    background-color: #283e50;
-    border-radius: 10px 10px 0px 0px;
-    max-width: 80vmin; 
+  background-color: #283e50;
+  border-radius: 10px 10px 0px 0px;
+  max-width: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.popis p {
+  background-color: #283e50;
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  font-size: 20px;
+  padding: 16px;
+  color: white;
+}
+
+.varianty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 20px;
+}
+
+.pravidla,
+.zacit {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  padding: 16px 32px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .pravidla {
-    color: #ffffff;
-    font-size: 20px;
-    background-color: #1fcca4;
-    font-family: arial;
-    text-decoration: none;
-    display: inline-block;
-    width: 89%;
-    padding: 16px 32px;
-    cursor: pointer;
-    text-align: center;
+  background-color: #1fcca4;
+}
+
+.pravidla:hover {
+  background-color: #1cbb96;
 }
 
 .zacit {
-    text-align: center;
-    color: #ffffff;
-    font-size: 20px;
-    background-color: #0197f6;
-    font-family: arial;
-    text-decoration: none;
-    display: inline-block;
-    width: 89%;
-    padding: 16px 32px;
-    cursor: pointer;
-   
+  background-color: #0197f6;
 }
 
-p {
-    background-color: #283e50;
-    line-height: 1.5;
-    font-family: arial;
-    text-align: center;
-    margin: 0px 10px 0px 10px;
-    font-size: 20px;
-    padding:  0px 10px 10px 10px;
-   
+.zacit:hover {
+  background-color: #0090e9;
 }
 
+/* Responsivita */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
 
-
-
-.zacit:hover { 
-    background-color: #0090e9;
-    }
-
-.pravidla:hover {
-    background-color:  #1cbb96;
-    }
-
-.domek {
-    width: 10%;
-  
-}
-
-.hraje {
-    margin-left: 60px;
-    
+  .pravidla,
+  .zacit {
+    font-size: 18px;
+    padding: 14px 24px;
+  }
 }
