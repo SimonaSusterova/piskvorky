@@ -1,10 +1,7 @@
 import { findWinner } from 'https://unpkg.com/piskvorky@0.1.4';
 
-// v tomto posledním úkolu sobě i pro přehlednost code review doplním sem tam komentáře, jelikož jsem něco přepsala,poupravila a sama se v tom už mírně ztrácela 
+let currentPlayer = 'circle';
 
-let currentPlayer = 'circle'; // kdo je teď na tahu - začíná kolečko, tedy já
-
-//pak se střídá kolečko x krížek stále dokola, dokud nenastane remíza nebo výhra
 const aktualizujHrace = () => {
   const ikona = document.getElementById('current-player-icon');
   if (currentPlayer === 'circle') {
@@ -16,7 +13,6 @@ const aktualizujHrace = () => {
   }
 };
 
-// volám API - může hrát AI (křížek)
 const AITah = async (herniPole) => {
   const odpoved = await fetch('https://piskvorky.czechitas-podklady.cz/api/suggest-next-move', {
     method: 'POST',
@@ -31,16 +27,13 @@ const AITah = async (herniPole) => {
 
   const data = await odpoved.json();
   const index = data.position.x + data.position.y * 10;
-  //Na DOM elementu příslušného políčka zavolej metodu .click()
   const policko = document.querySelectorAll('.cell')[index];
 
-  // kliknutí AI po určitém čas.úseku
   setTimeout(() => {
     policko.click();
   }, 500);
 };
 
-//kontrola, zda nemáme už vítěze, a nebo je tah na AI straně (křížek)
 const kontrolaViteze = async () => {
   const herniPole = Array.from(document.querySelectorAll('.cell')).map(cell => {
     if (cell.classList.contains('board__field--circle')) {
@@ -52,8 +45,6 @@ const kontrolaViteze = async () => {
     }
   });
 
-  // zde je ze 4. úkolu bonus - remíza
-// pokud někdo vyhraje, zobrazí se hláška a aktualizuje se hra
   const vitez = findWinner(herniPole);
 
   if (vitez === 'o' || vitez === 'x') {
@@ -67,7 +58,6 @@ const kontrolaViteze = async () => {
   }
 };
 
-// událost - kliknutí z mojí strany - kolečko
 const klik = async (event) => {
   const blok = event.target;
 
@@ -93,10 +83,19 @@ const klik = async (event) => {
   }
 };
 
-// posluchač události na celou hrací plochu - hlídá kliknutí na políčka
+// 🌟 VYTVOŘENÍ TLAČÍTEK
+const boardElement = document.getElementById('board');
+for (let i = 1; i <= 100; i++) {
+  const cell = document.createElement('button');
+  cell.classList.add('cell');
+  cell.id = `kostka-${i}`;
+  boardElement.appendChild(cell);
+}
+
+// 🌟 PŘIDÁNÍ POSLUCHAČŮ
 const policka = document.querySelectorAll('.cell');
 policka.forEach((policko) => {
   policko.addEventListener('click', klik);
 });
 
-aktualizujHrace(); 
+aktualizujHrace();
