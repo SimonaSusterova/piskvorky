@@ -1,21 +1,28 @@
-
 body {
     background: linear-gradient(to top right, #ffc8da, #615dad);
     color: white;
-    padding: 50px;
-    place-items: center;
-    align-items: center;
-   
-    
+    padding: 50px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.piskvorky {
+    background-color: #283e50;
+    border-radius: 10px 10px 0px 0px;
+    max-width: 80vmin;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 h1 {
-    font-family: lobster;
+    font-family: 'Lobster', cursive;
     color: #ffffff;
     background-color: #283e50;
     font-size: 30px;
     text-align: center;
-   
+    margin: 0;
+    padding: 20px 10px;
 }
 
 img {
@@ -23,67 +30,62 @@ img {
     border-radius: 10px 10px 0px 0px;
 }
 
-.piskvorky {
+.popis p {
     background-color: #283e50;
-    border-radius: 10px 10px 0px 0px;
-    max-width: 80vmin; 
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.varianty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.pravidla,
+.zacit {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    padding: 16px 32px;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 5px;
 }
 
 .pravidla {
-    color: #ffffff;
-    font-size: 20px;
     background-color: #1fcca4;
-    font-family: arial;
-    text-decoration: none;
-    display: inline-block;
-    width: 89%;
-    padding: 16px 32px;
-    cursor: pointer;
-    text-align: center;
 }
 
 .zacit {
-    text-align: center;
-    color: #ffffff;
-    font-size: 20px;
     background-color: #0197f6;
-    font-family: arial;
-    text-decoration: none;
-    display: inline-block;
-    width: 89%;
-    padding: 16px 32px;
-    cursor: pointer;
-   
 }
 
-p {
-    background-color: #283e50;
-    line-height: 1.5;
-    font-family: arial;
-    text-align: center;
-    margin: 0px 10px 0px 10px;
-    font-size: 20px;
-    padding:  0px 10px 10px 10px;
-   
-}
-
-
-
-
-.zacit:hover { 
+.zacit:hover {
     background-color: #0090e9;
-    }
+}
 
 .pravidla:hover {
-    background-color:  #1cbb96;
-    }
+    background-color: #1cbb96;
+}
 
+/* Ikony a další drobnosti */
 .domek {
     width: 10%;
-  
 }
 
 .hraje {
     margin-left: 60px;
-    
 }
