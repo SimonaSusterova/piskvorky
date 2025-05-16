@@ -83,7 +83,7 @@ const klik = async (event) => {
   }
 };
 
-// 🌟 VYTVOŘENÍ TLAČÍTEK
+
 const boardElement = document.getElementById('board');
 for (let i = 1; i <= 100; i++) {
   const cell = document.createElement('button');
@@ -92,7 +92,7 @@ for (let i = 1; i <= 100; i++) {
   boardElement.appendChild(cell);
 }
 
-// 🌟 PŘIDÁNÍ POSLUCHAČŮ
+
 const policka = document.querySelectorAll('.cell');
 policka.forEach((policko) => {
   policko.addEventListener('click', klik);

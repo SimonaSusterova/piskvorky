@@ -9,6 +9,8 @@ body {
     
 }
 
+* {box-sizing: border-box;}
+
 h1 {
     font-family: lobster;
     color: #ffffff;
@@ -36,7 +38,7 @@ img {
     font-family: arial;
     text-decoration: none;
     display: inline-block;
-    width: 89%;
+    width: 100%;
     padding: 16px 32px;
     cursor: pointer;
     text-align: center;
@@ -50,7 +52,7 @@ img {
     font-family: arial;
     text-decoration: none;
     display: inline-block;
-    width: 89%;
+    width: 100%;
     padding: 16px 32px;
     cursor: pointer;
    
